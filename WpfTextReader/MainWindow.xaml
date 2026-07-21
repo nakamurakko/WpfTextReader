@@ -15,18 +15,10 @@
         <local:MainWindowViewModel />
     </Window.DataContext>
 
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="auto" />
-            <RowDefinition Height="*" />
-        </Grid.RowDefinitions>
+    <Grid RowDefinitions="auto, *">
 
-        <Grid Grid.Row="0">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="auto" />
-                <ColumnDefinition Width="auto" />
-                <ColumnDefinition Width="*" />
-            </Grid.ColumnDefinitions>
+        <Grid Grid.Row="0"
+              ColumnDefinitions="auto, auto, *">
 
             <!-- ①テキストを読み上げるコマンドを呼び出すボタン。 -->
             <Button Grid.Column="0"
