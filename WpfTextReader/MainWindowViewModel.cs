@@ -12,6 +12,7 @@ namespace WpfTextReader;
 /// </summary>
 internal sealed partial class MainWindowViewModel : ObservableObject
 {
+
     /// <summary>
     /// ウィンドウタイトル。
     /// </summary>
@@ -28,7 +29,7 @@ internal sealed partial class MainWindowViewModel : ObservableObject
     /// 選択した音声。
     /// </summary>
     [ObservableProperty]
-    private InstalledVoice _selectedVoice;
+    private InstalledVoice? _selectedVoice;
 
     /// <summary>
     /// 読み上げたいテキスト。
@@ -94,4 +95,5 @@ internal sealed partial class MainWindowViewModel : ObservableObject
             }
         });
     }
+
 }
